@@ -3,8 +3,7 @@ main = "src/index.js"
 compatibility_date = "2024-12-01"
 
 [vars]
-# Comma-separated exact browser origins. Set this in production.
-ALLOWED_ORIGINS = "http://localhost:3000"
+ALLOWED_ORIGINS = "https://rps.abhyasadh.com, http://localhost:5173"
 
 [durable_objects]
 bindings = [
@@ -13,4 +12,4 @@ bindings = [
 
 [[migrations]]
 tag = "v1"
-new_classes = ["GameRoom"]
+new_sqlite_classes = ["GameRoom"]
