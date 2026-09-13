@@ -1,0 +1,16 @@
+name = "rps-backend"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+[vars]
+# Comma-separated exact browser origins. Set this in production.
+ALLOWED_ORIGINS = "http://localhost:3000"
+
+[durable_objects]
+bindings = [
+  { name = "GAME_ROOM", class_name = "GameRoom" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["GameRoom"]

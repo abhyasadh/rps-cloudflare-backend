@@ -1,0 +1,5 @@
+.wrangler/
+.dev.vars
+.env
+pnpm-debug.log*
+node_modules/
